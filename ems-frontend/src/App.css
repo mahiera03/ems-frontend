@@ -1,0 +1,42 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px; /* Adjust according to your header height */
+  background-color: #343a40; /* Dark background color */
+  color: white;
+  z-index: 20; /* Ensure it stays above the content */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: Adds shadow to the header */
+}
+
+.footer {
+  position: fixed; /* Keeps the footer at the bottom of the viewport */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: black;
+  text-align: center;
+  color: white;
+  z-index: 10; /* Ensures the footer stays on top of other elements */
+}
+
+/* Add padding to the top of the page content to avoid overlap with the fixed header */
+body {
+  padding-top: 60px; /* Adjust this value based on the header height */
+  padding-bottom: 50px; /* Adjust this value based on the footer height */
+  margin: 0;
+}
+
+/* Ensure the container doesn't overlap the fixed footer */
+.container {
+  padding-bottom: 50px;
+  /* Adjust this value based on the footer height */
+  padding-top: 20px; /* Add some space between the heading and the content */
+}
+
+/* Optional: Style the heading text to make sure it stands out */
+h2.text-center {
+  margin-top: 60px; /* Ensure the heading is not hidden by the fixed header */
+}
